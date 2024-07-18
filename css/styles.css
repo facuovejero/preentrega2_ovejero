@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*!-----Header-----*/
+/**--INDEX---*/
+.text-bg-dark{
+    background-color: #002038 !important;
+}
+
+header .navbar .container-fluid h1{
+    color: #f4f4f2;
+    display: flex;
+    text-align: center;
+    font-size: 30px;
+}
+
+header .navbar-container .navbar{
+    background-color: #002038;
+}
+
+header .container-fluid .imagenes{
+    width: 70px;
+}
+
+.navbar-toggler{
+    background-color: #243a69;
+}
+
+header .navbar .offcanvas-body li a{
+    color: #f4f4f2 !important;
+}
+
+
+/*?-----MAIN-----*/
+/**--INDEX---*/
+
+main{
+    background-color: #d4cdc5;
+    /*background-image: url(../img/fondo\ 1.jpg);*/
+}
+
+.fdj{
+    /*margin: 5px;*/
+    padding: 3px;
+    width: 100%;
+    height: calc(80vh - 50px);
+    background-image: url(../img/fondo-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.fdj a{
+    color: #f4f4f2;
+    margin: 10px;
+    text-align: left;
+    font-size: 30px;
+    text-decoration: none;
+    background-color: #2b2b2e;
+    border-radius: 10%;
+}/*--ARREGLAR EL BOTON--*/
+
+.fdj p{
+    width: 45%;
+    font-size: 30px;
+    color: #f4f4f2;
+    margin: 10px;
+    text-align: left;
+}
+
+main div h2{
+    margin: 5px;
+}
+
+main div p{
+    margin: 5px;
+}
+
+main .club{
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    /* padding-right: 25px; */
+}
+
+main .club img{
+    width: 270px;
+    height: 250px;
+}
+
+main .club div{
+    margin: 5px;
+    padding: 3px;
+    border: 2px solid grey;
+    width: 300px;
+    height: 380px;
+    text-align: center;
+    background-color: #aebacc;
+    display: inline-block;
+} /*--ALINEAR CON FLEX BOX--*/
+
+main .club a{
+    font-size: 20px;
+    color: white;
+    background-color: #191013;
+    text-decoration: none;
+    border-radius: 10%;
+    padding: 2px;
+}
+
+main .club h3{
+    font-size: 27px;
+}
+
+main .club p{
+    font-size: 20px;
+}
+/*--.fdj div--*/
+main .vdo{
+    display: flex;
+    justify-content: space-between;
+}
+
+main .caja_1{
+    border: #191013 solid 3px;
+    border-left: none;
+}
+
+main .vdo img{
+    width: 700px;
+}
+main .vdo video{
+    padding: 0px;
+}
+main .vdo p{
+    font-size: 40px;
+    margin: 0px;
+    padding: 0px;
+}
+
+main .vdo a{
+    font-size: 27px;
+    color: white;
+    background-color: #191013;
+    margin: 3px;
+    padding: 2px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10%;
+}
+
+main .btns{
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    /* padding-right: 25px; */
+}
+
+main .text{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+
+main .text a{
+    width: 130px;
+    text-align: center;
+}
+
+main .btns div{
+    margin: 5px;
+    padding: 3px;
+    border: 2px solid grey;
+    width: 300px;
+    height: 380px;
+    text-align: center;
+    background-color: whitesmoke;
+    display: inline-block;
+}/*--ALINEAR CON FLEX BOX--*/
+
+main .btns a{
+    font-size: 20px;
+    color: white;
+    background-color: #191013;
+    text-decoration: none;
+    border-radius: 10% !important;
+    padding: 2px !important;
+}
+
+main .btns h3{
+    font-size: 25px;
+    color: black;
+}
+
+main .btns p{
+    font-size: 20px;
+}
+
+main .btns img{
+    width: 290px;
+    height: 250px;
+}
+
+/*--CAROUSEL--*/
+main .carouselm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+main .carousel{
+    width: 800px;
+    display: flex;
+    align-items: center;
+}
+
+main .carousel img{
+    width: 450px;
+    height: 100vh;
+}
+
+/**---CUENTA---*/
+.cuenta{
+    background-image: url(../img/fondo.cuenta.jpg);
+    padding: 35px;
+    height: 100%;
+}
+
+.formulario{
+    background-color: burlywood;
+    margin: 43.5px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.formulario div{
+    margin: 10px;
+}
+
+.formulario button{
+    margin: 10px;
+}
+
+/*?-----Footer-----*/
+/**--INDEX---*/
+footer{
+    margin: 0px;
+    padding: 8px;
+    background-color: #243a69;
+    display: flex;
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
+    width: 100%;
+}
+
+footer .letter-container{
+    display: flex;
+    justify-content: flex-start;
+}
+
+footer .end{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    align-self: flex-end;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer a img{
+    width: 120px;
+}
+
+footer .abajo li{
+    list-style: none;
+    font-size: 20px;
+}
+
+footer .follow p{
+    list-style: none;
+    font-size: 40px;
+}
+
+footer div img{
+    width: 40px;
+}
+
+/**MAPA*/
+footer div section iframe{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+footer div h6{
+    font-size: 40px;
+}
+
+/**ICONOS*/
+footer .icon-container{
+    margin: 5px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 50px 50px 50px;
+    grid-template-areas: 
+    "follow follow"
+    "wpp face"
+    "ig tiktok";
+}
+
+.follow{
+    grid-area: follow;
+}
+.wpp{
+    grid-area: wpp;
+}
+
+.face{
+    grid-area: face;
+}
+
+.ig{
+    grid-area: ig;
+}
+
+.tiktok{
+    grid-area: tiktok;
+}
+
+/**--CUENTA---*/
+
+.foot-cuenta{
+    padding: 10%;
+}
