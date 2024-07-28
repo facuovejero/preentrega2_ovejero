@@ -149,7 +149,6 @@ main .club p {
     font-size: 20px;
 }
 
-/*--.fdj div--*/
 main .vdo {
     display: flex;
     justify-content: space-between;
@@ -307,78 +306,36 @@ main .carousel img {
 
 /*! PRODUCTOS */
 
-.categorias{
+.categorias {
     background-color: #aebacc;
     text-decoration: none;
 }
 
-.categorias a{
+.categorias a {
     text-decoration: none;
 }
 
-.categorias li{
+.categorias li {
     list-style: none;
 }
-main .category{
-    margin: 10px 0;
+
+.shirts{
+
+}
+
+.container {
+    margin: 0px;
+    padding: 0px;
     display: grid;
-    /* display: flex;
-    justify-content: space-evenly; */
-    width: 100%;
-}
-
-main .category img {
-    width: 100%;
-    height: 250px;
-}
-
-main .category div {
-    margin: 5px;
-    padding: 3px;
-    border: 2px solid grey;
-    width: 100px;
-    height: 130px;
-    text-align: center;
-    background-color: #aebacc;
-    /* display: inline-block; */
-}
-
-main .category a {
-    font-size: 20px;
-    color: white;
-    background-color: #191013;
-    text-decoration: none;
-    border-radius: 10%;
-    padding: 2px;
-}
-
-main .category h3 {
-    font-size: 27px;
-}
-
-main .category p {
-    font-size: 20px;
-}
-
-.categoria_container {
-    display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr;
-    gap: 8px 4px;
+    gap: 8px 10px;
     grid-auto-flow: row;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: stretch;
     grid-template-areas:
-        "categorias camiseta-1 camiseta-2- camiseta-3"
+        "categorias camiseta-1 camiseta-2 camiseta-3"
         "categorias botines-1 botines-2 botines-3"
         "categorias botines-4 botines-5 pelota-1"
         "categorias camiseta-4 camiseta-5 guantes-de-arquero";
-    width: 100%;
-    height: 350px;
 }
 
 .categorias {
@@ -387,10 +344,43 @@ main .category p {
 
 .camiseta-1 {
     grid-area: camiseta-1;
+    text-align: center;
 }
 
-.camiseta-2- {
-    grid-area: camiseta-2-;
+.camiseta-1 img{
+    width: 216px;
+    height: 250px;
+}
+
+/* .camiseta-1 div{
+    margin: 5px;
+    padding: 3px;
+    border: 2px solid grey;
+    width: 100px;
+    height: 130px;
+    text-align: center;
+    background-color: #aebacc;
+} */
+
+.camiseta-1 a {
+    font-size: 20px;
+    color: white;
+    background-color: #191013;
+    text-decoration: none;
+    border-radius: 10%;
+    padding: 2px;
+}
+
+.camiseta-1 p {
+    font-size: 20px;
+}
+
+.camiseta-1 h3 {
+    font-size: 27px;
+}
+
+.camiseta-2 {
+    grid-area: camiseta-2;
 }
 
 .camiseta-3 {
@@ -433,6 +423,42 @@ main .category p {
     grid-area: guantes-de-arquero;
 }
 
+
+/*? SERVICIOS  */
+
+.servicios h1{
+    padding: 10px;
+}
+
+.servicios p{
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+.service-first img {
+    width: 500px;
+}
+
+.service-first p{
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: start;
+}
+
+.service-first{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.service-two img{
+    margin: 5px;
+}
+
+.service-two{
+    display: flex;
+    align-items: center;
+}
 
 /*?-----Footer-----*/
 /**--INDEX---*/
