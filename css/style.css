@@ -305,139 +305,44 @@ main .carousel img {
 }
 
 /*! PRODUCTOS */
-
-.categorias {
-    background-color: #aebacc;
-    text-decoration: none;
-}
-
-.categorias a {
-    text-decoration: none;
-}
-
-.categorias li {
-    list-style: none;
-}
-
-.shirts{
-
-}
-
-.container {
-    margin: 0px;
-    padding: 0px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 8px 10px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "categorias camiseta-1 camiseta-2 camiseta-3"
-        "categorias botines-1 botines-2 botines-3"
-        "categorias botines-4 botines-5 pelota-1"
-        "categorias camiseta-4 camiseta-5 guantes-de-arquero";
-}
-
-.categorias {
-    grid-area: categorias;
-}
-
-.camiseta-1 {
-    grid-area: camiseta-1;
-    text-align: center;
-}
-
-.camiseta-1 img{
-    width: 216px;
-    height: 250px;
-}
-
-/* .camiseta-1 div{
+.main-productos h1{
     margin: 5px;
-    padding: 3px;
-    border: 2px solid grey;
-    width: 100px;
-    height: 130px;
-    text-align: center;
-    background-color: #aebacc;
-} */
+    padding: 5px;
+}
 
-.camiseta-1 a {
+.shirts-container p{
     font-size: 20px;
-    color: white;
-    background-color: #191013;
-    text-decoration: none;
-    border-radius: 10%;
-    padding: 2px;
+    text-align: left;
 }
 
-.camiseta-1 p {
-    font-size: 20px;
+.card-shirts{
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.camiseta-1 h3 {
-    font-size: 27px;
+.card-shirts img{
+    width: 80%;
+    height: 180px;
 }
-
-.camiseta-2 {
-    grid-area: camiseta-2;
-}
-
-.camiseta-3 {
-    grid-area: camiseta-3;
-}
-
-.botines-1 {
-    grid-area: botines-1;
-}
-
-.botines-2 {
-    grid-area: botines-2;
-}
-
-.botines-3 {
-    grid-area: botines-3;
-}
-
-.botines-4 {
-    grid-area: botines-4;
-}
-
-.botines-5 {
-    grid-area: botines-5;
-}
-
-.pelota-1 {
-    grid-area: pelota-1;
-}
-
-.camiseta-4 {
-    grid-area: camiseta-4;
-}
-
-.camiseta-5 {
-    grid-area: camiseta-5;
-}
-
-.guantes-de-arquero {
-    grid-area: guantes-de-arquero;
-}
-
 
 /*? SERVICIOS  */
 
-.servicios h1{
-    padding: 10px;
-}
-
-.servicios p{
-    font-size: 20px;
+.servicios-page h1{
     padding: 10px;
     margin-bottom: 0px;
 }
 
+.servicios-page p{
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 0px;
+    text-align: justify;
+}
+
 .service-first img {
     width: 500px;
+    height: 250px;
+    margin: 5px;
 }
 
 .service-first p{
@@ -455,9 +360,77 @@ main .carousel img {
     margin: 5px;
 }
 
+.service-two p{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .service-two{
     display: flex;
     align-items: center;
+}
+
+/*? NOSOTROS */
+.nosotros-main h1{
+    margin-left: 10px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+}
+
+.nosotros-main p{
+    padding: 10px;
+    font-size: 23px;
+    margin-bottom: 0px;
+}
+
+/*--CAROUSEL--*/
+.carousel-nos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.carousel-nos img {
+    width: 450px;
+    height: 100vh;
+}
+
+/*? CONTACTOS */
+
+.contactos-page h1{
+    margin-bottom: 0px;
+
+}
+
+.contactos-page p{
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+.contactos-page ul{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 19px;
+}
+
+.contactos-page img{
+    width: 700px;
+    height: 100%;
+}
+.contactos-page{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.text-cont-container{
+    padding: 5px;
+}
+
+.text-cont-container a{
+    text-decoration: none;
 }
 
 /*?-----Footer-----*/
@@ -599,6 +572,7 @@ footer .icon-container p {
 }
 
 /*!--MEDIA--*/
+/*? INDEX */
 @media screen and (max-width:1068px) {
     main .btns h3 {
         font-size: 22px;
@@ -997,4 +971,115 @@ footer .icon-container p {
         align-items: center;
         align-self: center;
     }
+}
+
+/*! SERVICIOS */
+
+@media screen and (max-width: 900px){
+    .service-first{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .service-two{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .service-first img{
+        width: 80%;
+    }
+    .service-two img{
+        width: 80%;
+    }
+}
+
+/*! NOSOTROS */
+
+@media screen and (max-width: 990px) {
+    .carousel-fade{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .carousel-fade{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .carousel-fade{
+        width: 80%;
+    }
+}
+
+/*! CONTACTOS */
+
+@media screen and (max-width: 1000px) {
+    .img-contact img{
+        height: 100%;
+        width: 700px;
+    }
+}
+
+@media  screen and (max-width: 978px) {
+    .img-contact img{
+        width: 600px ;
+    }
+}
+
+@media  screen and (max-width: 918px){
+    .img-contact img{
+        width: 550px ;
+    }
+}
+
+@media  screen and (max-width: 855px){
+    .img-contact img{
+        width: 500px ;
+    }
+}
+
+@media  screen and (max-width: 800px){
+    .img-contact img{
+        width: 400px ;
+        height: 100%;
+    }
+}
+
+@media  screen and (max-width: 703px){
+    .contactos-page{
+        display: flex;
+        flex-direction: column;
+    }
+    .img-contact{
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    .img-contact img{
+        width: 100%;
+    }
+}
+
+/*! PRODUCTOS */
+
+@media screen and (max-width: 1068px){
+
+}
+
+@media screen and (max-width:){
+
+}
+
+@media screen and (max-width:){
+
+}
+
+@media screen and (max-width:){
+
 }
