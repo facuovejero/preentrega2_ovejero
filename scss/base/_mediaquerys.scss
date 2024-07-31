@@ -1,0 +1,496 @@
+/*!--MEDIA--*/
+/*? INDEX */
+@media screen and (max-width:1068px) {
+    main .btns h3 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width:1043px) {
+    main .caja_1 img {
+        width: 680px;
+        height: 394px;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    main .caja_1 img {
+        width: 670px;
+        height: 394px;
+    }
+}
+
+@media screen and (max-width:1013px) {
+    main .caja_1 img {
+        width: 660px;
+        height: 394px;
+    }
+}
+
+@media screen and (max-width:986px) {
+    main .club h3 {
+        font-size: 24px;
+    }
+
+    main .btns h3 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width:949px) {
+    main .club {
+        margin: 0px;
+        padding: 5px;
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 7px 13px;
+        grid-template-areas:
+            "cami-1 cami-2"
+            "cami-3 cami-4";
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: stretch;
+        width: 100%;
+        height: 100%;
+    }
+
+    .cami-1 {
+        grid-area: cami-1;
+    }
+
+    .cami-2 {
+        grid-area: cami-2;
+    }
+
+    .cami-3 {
+        grid-area: cami-3;
+    }
+
+    .cami-4 {
+        grid-area: cami-4;
+    }
+
+    main .btns {
+        margin: 0px;
+        padding: 5px;
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 7px 13px;
+        grid-template-areas:
+            "botin-1 botin-2"
+            "botin-3 botin-4";
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: stretch;
+        width: 100%;
+        height: 100%;
+    }
+
+    .botin-1 {
+        grid-area: botin-1;
+    }
+
+    .botin-2 {
+        grid-area: botin-2;
+    }
+
+    .botin-3 {
+        grid-area: botin-3;
+    }
+
+    .botin-4 {
+        grid-area: botin-4;
+    }
+
+    main .caja_1 img {
+        width: 640px;
+        height: 394px;
+    }
+}
+
+@media screen and (max-width:926px) {
+    main .caja_1 img {
+        width: 630px;
+        height: 394px;
+    }
+}
+
+@media screen and (max-width:903px) {
+    main .caja_1 {
+        width: 100%;
+        height: 100%;
+    }
+
+    main .caja_1 img {
+        width: 650px;
+        height: 390px;
+    }
+}
+
+@media screen and (max-width:889px) {
+    main .caja_1 img {
+        width: 600px;
+        height: 394px;
+    }
+}
+
+@media screen and (max-width:855px) {
+    main .caja_1 img {
+        width: 580px;
+        height: 394px;
+    }
+}
+
+@media screen and (max-width:827px) {
+    main .carousel {
+        width: 700px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:806px) {
+    main .carousel {
+        width: 600px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:791px) {
+    main .caja_1 img {
+        width: 550px;
+        height: 394px;
+    }
+}
+
+@media screen and (max-width:773px) {
+    main .caja_1 img {
+        width: 530px;
+        height: 394px;
+    }
+}
+
+@media screen and (max-width:745px) {
+    .foot-page {
+        font-size: 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .letter-container {
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .end {
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .icon-container {
+        font-size: 30px;
+        margin: 7px;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width:735px) {
+    main .club {
+        height: 50%;
+        margin-bottom: 20px;
+    }
+
+    main .club div {
+        width: 80%;
+        height: 100%;
+    }
+
+    main .club img {
+        width: 70%;
+        height: 60%;
+    }
+
+    main .btns {
+        height: 50%;
+        margin-bottom: 20px;
+    }
+
+    main .btns div {
+        width: 80%;
+        height: 100%;
+    }
+
+    main .btns img {
+        width: 70%;
+        height: 60%;
+    }
+
+    .vdo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .caja_1 {
+        border-right: none;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text p {
+        text-align: center;
+    }
+
+    main .caja_1 img {
+        width: 100%;
+        height: 394px;
+    }
+}
+
+@media screen and (max-width:730px) {
+    .foot-page {
+        width: 500px !important;
+        height: 50% !important;
+    }
+
+    .map-container {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    main .carousel {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main .carousel {
+        width: 80%;
+    }
+
+    main .carouselm img {
+        width: 80%;
+        height: 70% !important;
+    }
+}
+
+@media screen and (max-width: 591px) {
+    main .btns h3 {
+        font-size: 20px;
+    }
+
+    main .club h3 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .foot-page {
+        width: 400px !important;
+        height: 50% !important;
+    }
+
+    main .club {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 8px 4px;
+        grid-template-areas:
+            "cami-1"
+            "cami-2"
+            "cami-3"
+            "cami-4";
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: stretch;
+        width: 100%;
+        height: 100%;
+    }
+
+    .cami-1 {
+        grid-area: cami-1;
+    }
+
+    .cami-2 {
+        grid-area: cami-2;
+    }
+
+    .cami-3 {
+        grid-area: cami-3;
+    }
+
+    .cami-4 {
+        grid-area: cami-4;
+    }
+
+    main .btns {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 8px 4px;
+        grid-template-areas:
+            "botin-1"
+            "botin-2"
+            "botin-3"
+            "botin-4";
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: stretch;
+        width: 100%;
+        height: 80%;
+    }
+
+    .botin-1 {
+        grid-area: botin-1;
+    }
+
+    .botin-2 {
+        grid-area: botin-2;
+    }
+
+    .botin-3 {
+        grid-area: botin-3;
+    }
+
+    .botin-4 {
+        grid-area: botin-4;
+    }
+}
+
+
+
+@media screen and (max-width: 420px) {
+    .foot-page {
+        width: 300px !important;
+        height: 50% !important;
+    }
+
+    .end {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .pie-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+}
+
+/*! SERVICIOS */
+
+@media screen and (max-width: 900px){
+    .service-first{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .service-two{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .service-first img{
+        width: 80%;
+    }
+    .service-two img{
+        width: 80%;
+    }
+}
+
+/*! NOSOTROS */
+
+@media screen and (max-width: 990px) {
+    .carousel-fade{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .carousel-fade{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .carousel-fade{
+        width: 80%;
+    }
+}
+
+/*! CONTACTOS */
+
+@media screen and (max-width: 1000px) {
+    .img-contact img{
+        height: 100%;
+        width: 700px;
+    }
+}
+
+@media  screen and (max-width: 978px) {
+    .img-contact img{
+        width: 600px ;
+    }
+}
+
+@media  screen and (max-width: 918px){
+    .img-contact img{
+        width: 550px ;
+    }
+}
+
+@media  screen and (max-width: 855px){
+    .img-contact img{
+        width: 500px ;
+    }
+}
+
+@media  screen and (max-width: 800px){
+    .img-contact img{
+        width: 400px ;
+        height: 100%;
+    }
+}
+
+@media  screen and (max-width: 703px){
+    .contactos-page{
+        display: flex;
+        flex-direction: column;
+    }
+    .img-contact{
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    .img-contact img{
+        width: 100%;
+    }
+}
+
+/*! PRODUCTOS */
