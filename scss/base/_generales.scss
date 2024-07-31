@@ -9,4 +9,45 @@
     font-style: normal;
 }
 
+/* Variables que se usan en muchos lugares */
+$fondo: #d4cdc5;
+
 /* ANIDAR CLASES DE BOOTSTRAPS CON IMPORTANT*/
+
+%flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.fdj {
+    @extend %flex;
+}
+
+%flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.club{
+    @extend %flex;
+}
+
+.btns{
+    @extend %flex;
+}
+
+/* MIXIN */
+
+@mixin flex ($flex, $justify){
+    display: $flex;
+    justify-content: $justify;
+}
+
+.btns{
+    @include flex (flex, space-evenly)
+}
+
+.club{
+    @include flex (flex, space-between)
+}

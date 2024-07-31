@@ -7,7 +7,26 @@
   font-weight: 400;
   font-style: normal; }
 
+/* Variables que se usan en muchos lugares */
 /* ANIDAR CLASES DE BOOTSTRAPS CON IMPORTANT*/
+.fdj, .club, .btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; }
+
+.fdj, .club, .btns {
+  display: flex;
+  justify-content: space-evenly; }
+
+/* MIXIN */
+.btns {
+  display: flex;
+  justify-content: space-evenly; }
+
+.club {
+  display: flex;
+  justify-content: space-between; }
+
 header nav .navbar-container .navbar {
   background-color: #002038; }
   header nav .navbar-container .navbar .container-fluid h1 {
@@ -123,9 +142,6 @@ main {
           text-align: center; }
   main .btns {
     margin: 10px 0;
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
     width: 100%;
     display: flex;
     justify-content: space-evenly; }

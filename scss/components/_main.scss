@@ -1,6 +1,6 @@
 /* INDEX */
 main {
-    background-color: #d4cdc5;
+    background-color: $fondo;
 
     .fdj {
         padding: 3px;
@@ -143,9 +143,6 @@ main {
 
     .btns {
         margin: 10px 0;
-        display: flex;
-        justify-content: space-evenly;
-        width: 100%;
         width: 100%;
         display: flex;
         justify-content: space-evenly;
@@ -337,35 +334,35 @@ main {
 }
 
 /* CONTACTOS */
-.contactos-page{
+.contactos-page {
     display: flex;
     justify-content: space-evenly;
 
-    .text-cont-container{
+    .text-cont-container {
         padding: 5px;
 
-        a{
+        a {
             text-decoration: none;
         }
-        
-        h1{
+
+        h1 {
             margin-bottom: 0px;
         }
 
-        p{
+        p {
             margin-bottom: 0px;
-    font-size: 20px;
+            font-size: 20px;
         }
 
-        ul{
+        ul {
             margin-top: 10px;
-    margin-bottom: 0px;
-    font-size: 19px;
+            margin-bottom: 0px;
+            font-size: 19px;
         }
     }
 
-    img{
+    img {
         width: 700px;
-    height: 100%;
+        height: 100%;
     }
 }
