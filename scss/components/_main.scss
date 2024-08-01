@@ -23,6 +23,7 @@ main {
             text-decoration: none;
             background-color: #2b2b2e;
             border-radius: 10%;
+            transition: 0.2s;
         }
 
         p {
@@ -59,6 +60,14 @@ main {
                 background-color: #aebacc;
                 display: inline-block;
 
+                &:hover {
+                    transition: 0.4s;
+                    transform: scale(1.1);
+                    box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
+                    -webkit-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
+                    -moz-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
+                }
+
                 img {
                     width: 100%;
                     height: 250px;
@@ -71,6 +80,7 @@ main {
                     text-decoration: none;
                     border-radius: 10%;
                     padding: 2px;
+                    transition: 0.2s;
                 }
 
                 h3 {
@@ -133,9 +143,10 @@ main {
                     text-decoration: none;
                     text-align: center;
                     border-radius: 10%;
-
+                    transition: 0.2s;
                     width: 130px;
                     text-align: center;
+                    transition: 0.2s;
                 }
             }
         }
@@ -156,6 +167,14 @@ main {
             text-align: center;
             background-color: whitesmoke;
             display: inline-block;
+
+            &:hover {
+                transition: 0.4s;
+                transform: scale(1.1);
+                box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
+                -webkit-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
+            }
         }
 
         a {
@@ -165,6 +184,7 @@ main {
             text-decoration: none;
             border-radius: 10% !important;
             padding: 2px !important;
+            transition: 0.2s;
         }
 
         h3 {
@@ -243,6 +263,10 @@ main {
 
 /* PRODUCTOS */
 .main-productos {
+    p {
+        padding: 7px;
+    }
+
     .shirts-container {
         div {
             h1 {
@@ -255,114 +279,166 @@ main {
                 text-align: left;
             }
         }
-    }
-}
 
-/* SERVICIOS */
-.servicios-page {
-    h1 {
-        padding: 10px;
-        margin-bottom: 0px;
+        .card-shirts {
+            display: flex;
+            justify-content: space-evenly;
+            width: 50%;
+
+            img {
+                width: 80%;
+                height: 180px;
+            }
+        }
+
+        .history-container {
+            p {
+                font-size: 25px;
+            }
+
+            .card {
+                background-color: #aebacc !important;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+
+                &:hover {
+                    transition: 0.4s;
+                    transform: scale(1.1);
+                    box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
+                    -webkit-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
+                    -moz-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
+                }
+
+                img {
+                    width: 200px;
+                    height: 200px;
+                }
+
+                a {
+                    text-decoration: none;
+                    background-color: #191013;
+                    border-radius: 5%;
+                    font-size: 20px;
+                    color: #f4f4f2;
+                }
+            }
+        }
+
+        .text-produ-container {
+            p {
+                font-size: 25px;
+                margin-bottom: 0px;
+            }
+        }
     }
 
-    p {
-        font-size: 20px;
-        padding: 10px;
-        margin-bottom: 0px;
-        text-align: justify;
+    /* SERVICIOS */
+    .servicios-page {
+        h1 {
+            padding: 10px;
+            margin-bottom: 0px;
+        }
+
+        p {
+            font-size: 20px;
+            padding: 10px;
+            margin-bottom: 0px;
+            text-align: justify;
+        }
+
+        .service-first {
+            display: flex;
+            justify-content: space-evenly;
+
+            img {
+                width: 500px;
+                height: 250px;
+                margin: 5px;
+            }
+
+            p {
+                margin-left: 5px;
+                margin-right: 5px;
+                text-align: start;
+            }
+        }
+
+        .service-two {
+            display: flex;
+            align-items: center;
+
+            img {
+                margin: 5px;
+            }
+
+            p {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
     }
 
-    .service-first {
+    /* NOSOTROS */
+    .nosotros-main {
+        h1 {
+            margin-left: 10px;
+            margin-bottom: 0px;
+            padding-top: 10px;
+        }
+
+        p {
+            padding: 10px;
+            font-size: 23px;
+            margin-bottom: 0px;
+        }
+
+        .carousel-nos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding-bottom: 10px;
+
+            img {
+                width: 450px;
+                height: 100vh;
+            }
+        }
+    }
+
+    /* CONTACTOS */
+    .contactos-page {
         display: flex;
         justify-content: space-evenly;
 
-        img {
-            width: 500px;
-            height: 250px;
-            margin: 5px;
+        .text-cont-container {
+            padding: 5px;
+
+            a {
+                text-decoration: none;
+            }
+
+            h1 {
+                margin-bottom: 0px;
+            }
+
+            p {
+                margin-bottom: 0px;
+                font-size: 20px;
+            }
+
+            ul {
+                margin-top: 10px;
+                margin-bottom: 0px;
+                font-size: 19px;
+            }
         }
-
-        p {
-            margin-left: 5px;
-            margin-right: 5px;
-            text-align: start;
-        }
-    }
-
-    .service-two {
-        display: flex;
-        align-items: center;
-
-        img {
-            margin: 5px;
-        }
-
-        p {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-    }
-}
-
-/* NOSOTROS */
-.nosotros-main {
-    h1 {
-        margin-left: 10px;
-        margin-bottom: 0px;
-        padding-top: 10px;
-    }
-
-    p {
-        padding: 10px;
-        font-size: 23px;
-        margin-bottom: 0px;
-    }
-
-    .carousel-nos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        padding-bottom: 10px;
 
         img {
-            width: 450px;
-            height: 100vh;
+            width: 700px;
+            height: 100%;
         }
-    }
-}
-
-/* CONTACTOS */
-.contactos-page {
-    display: flex;
-    justify-content: space-evenly;
-
-    .text-cont-container {
-        padding: 5px;
-
-        a {
-            text-decoration: none;
-        }
-
-        h1 {
-            margin-bottom: 0px;
-        }
-
-        p {
-            margin-bottom: 0px;
-            font-size: 20px;
-        }
-
-        ul {
-            margin-top: 10px;
-            margin-bottom: 0px;
-            font-size: 19px;
-        }
-    }
-
-    img {
-        width: 700px;
-        height: 100%;
     }
 }

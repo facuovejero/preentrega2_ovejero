@@ -63,7 +63,8 @@ main {
       font-size: 30px;
       text-decoration: none;
       background-color: #2b2b2e;
-      border-radius: 10%; }
+      border-radius: 10%;
+      transition: 0.2s; }
     main .fdj p {
       width: 45%;
       font-size: 30px;
@@ -88,6 +89,12 @@ main {
       text-align: center;
       background-color: #aebacc;
       display: inline-block; }
+      main div .club div:hover {
+        transition: 0.4s;
+        transform: scale(1.1);
+        box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75); }
       main div .club div img {
         width: 100%;
         height: 250px; }
@@ -97,7 +104,8 @@ main {
         background-color: #191013;
         text-decoration: none;
         border-radius: 10%;
-        padding: 2px; }
+        padding: 2px;
+        transition: 0.2s; }
       main div .club div h3 {
         font-size: 27px; }
       main div .club div p {
@@ -138,8 +146,10 @@ main {
           text-decoration: none;
           text-align: center;
           border-radius: 10%;
+          transition: 0.2s;
           width: 130px;
-          text-align: center; }
+          text-align: center;
+          transition: 0.2s; }
   main .btns {
     margin: 10px 0;
     width: 100%;
@@ -154,13 +164,20 @@ main {
       text-align: center;
       background-color: whitesmoke;
       display: inline-block; }
+      main .btns div:hover {
+        transition: 0.4s;
+        transform: scale(1.1);
+        box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75); }
     main .btns a {
       font-size: 20px;
       color: white;
       background-color: #191013;
       text-decoration: none;
       border-radius: 10% !important;
-      padding: 2px !important; }
+      padding: 2px !important;
+      transition: 0.2s; }
     main .btns h3 {
       font-size: 25px;
       color: black;
@@ -212,88 +229,114 @@ main {
       margin: 10px; }
 
 /* PRODUCTOS */
-.main-productos .shirts-container div h1 {
-  margin: 5px;
-  padding: 5px; }
-
-.main-productos .shirts-container div p {
-  font-size: 20px;
-  text-align: left; }
-
-/* SERVICIOS */
-.servicios-page h1 {
-  padding: 10px;
-  margin-bottom: 0px; }
-
-.servicios-page p {
-  font-size: 20px;
-  padding: 10px;
-  margin-bottom: 0px;
-  text-align: justify; }
-
-.servicios-page .service-first {
-  display: flex;
-  justify-content: space-evenly; }
-  .servicios-page .service-first img {
-    width: 500px;
-    height: 250px;
-    margin: 5px; }
-  .servicios-page .service-first p {
-    margin-left: 5px;
-    margin-right: 5px;
-    text-align: start; }
-
-.servicios-page .service-two {
-  display: flex;
-  align-items: center; }
-  .servicios-page .service-two img {
-    margin: 5px; }
-  .servicios-page .service-two p {
+.main-productos {
+  /* SERVICIOS */
+  /* NOSOTROS */
+  /* CONTACTOS */ }
+  .main-productos p {
+    padding: 7px; }
+  .main-productos .shirts-container div h1 {
+    margin: 5px;
+    padding: 5px; }
+  .main-productos .shirts-container div p {
+    font-size: 20px;
+    text-align: left; }
+  .main-productos .shirts-container .card-shirts {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%; }
+    .main-productos .shirts-container .card-shirts img {
+      width: 80%;
+      height: 180px; }
+  .main-productos .shirts-container .history-container p {
+    font-size: 25px; }
+  .main-productos .shirts-container .history-container .card {
+    background-color: #aebacc !important;
+    align-items: center;
+    width: 100%;
+    height: 100%; }
+    .main-productos .shirts-container .history-container .card:hover {
+      transition: 0.4s;
+      transform: scale(1.1);
+      box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75); }
+    .main-productos .shirts-container .history-container .card img {
+      width: 200px;
+      height: 200px; }
+    .main-productos .shirts-container .history-container .card a {
+      text-decoration: none;
+      background-color: #191013;
+      border-radius: 5%;
+      font-size: 20px;
+      color: #f4f4f2; }
+  .main-productos .shirts-container .text-produ-container p {
+    font-size: 25px;
+    margin-bottom: 0px; }
+  .main-productos .servicios-page h1 {
+    padding: 10px;
+    margin-bottom: 0px; }
+  .main-productos .servicios-page p {
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 0px;
+    text-align: justify; }
+  .main-productos .servicios-page .service-first {
+    display: flex;
+    justify-content: space-evenly; }
+    .main-productos .servicios-page .service-first img {
+      width: 500px;
+      height: 250px;
+      margin: 5px; }
+    .main-productos .servicios-page .service-first p {
+      margin-left: 5px;
+      margin-right: 5px;
+      text-align: start; }
+  .main-productos .servicios-page .service-two {
+    display: flex;
+    align-items: center; }
+    .main-productos .servicios-page .service-two img {
+      margin: 5px; }
+    .main-productos .servicios-page .service-two p {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; }
+  .main-productos .nosotros-main h1 {
+    margin-left: 10px;
+    margin-bottom: 0px;
+    padding-top: 10px; }
+  .main-productos .nosotros-main p {
+    padding: 10px;
+    font-size: 23px;
+    margin-bottom: 0px; }
+  .main-productos .nosotros-main .carousel-nos {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; }
-
-/* NOSOTROS */
-.nosotros-main h1 {
-  margin-left: 10px;
-  margin-bottom: 0px;
-  padding-top: 10px; }
-
-.nosotros-main p {
-  padding: 10px;
-  font-size: 23px;
-  margin-bottom: 0px; }
-
-.nosotros-main .carousel-nos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  padding-bottom: 10px; }
-  .nosotros-main .carousel-nos img {
-    width: 450px;
-    height: 100vh; }
-
-/* CONTACTOS */
-.contactos-page {
-  display: flex;
-  justify-content: space-evenly; }
-  .contactos-page .text-cont-container {
-    padding: 5px; }
-    .contactos-page .text-cont-container a {
-      text-decoration: none; }
-    .contactos-page .text-cont-container h1 {
-      margin-bottom: 0px; }
-    .contactos-page .text-cont-container p {
-      margin-bottom: 0px;
-      font-size: 20px; }
-    .contactos-page .text-cont-container ul {
-      margin-top: 10px;
-      margin-bottom: 0px;
-      font-size: 19px; }
-  .contactos-page img {
-    width: 700px;
-    height: 100%; }
+    align-items: center;
+    width: 100%;
+    padding-bottom: 10px; }
+    .main-productos .nosotros-main .carousel-nos img {
+      width: 450px;
+      height: 100vh; }
+  .main-productos .contactos-page {
+    display: flex;
+    justify-content: space-evenly; }
+    .main-productos .contactos-page .text-cont-container {
+      padding: 5px; }
+      .main-productos .contactos-page .text-cont-container a {
+        text-decoration: none; }
+      .main-productos .contactos-page .text-cont-container h1 {
+        margin-bottom: 0px; }
+      .main-productos .contactos-page .text-cont-container p {
+        margin-bottom: 0px;
+        font-size: 20px; }
+      .main-productos .contactos-page .text-cont-container ul {
+        margin-top: 10px;
+        margin-bottom: 0px;
+        font-size: 19px; }
+    .main-productos .contactos-page img {
+      width: 700px;
+      height: 100%; }
 
 footer {
   margin: 0px;
@@ -697,3 +740,8 @@ footer {
     width: 100%; } }
 
 /*! PRODUCTOS */
+@media screen and (max-width: 643px) {
+  .card-shirts {
+    width: 100%;
+    display: flex;
+    align-items: center; } }

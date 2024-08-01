@@ -70,6 +70,7 @@ main {
     text-decoration: none;
     background-color: #2b2b2e;
     border-radius: 10%;
+    transition: 0.2s;
 }
 
 /*--ARREGLAR EL BOTON--*/
@@ -95,6 +96,14 @@ main .club {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+}
+
+.club div:hover {
+    transition: 0.4s;
+    transform: scale(1.1);
+    box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
 }
 
 .buy2 {
@@ -139,6 +148,7 @@ main .club a {
     text-decoration: none;
     border-radius: 10%;
     padding: 2px;
+    transition: 0.2s;
 }
 
 main .club h3 {
@@ -178,6 +188,7 @@ main .vdo a {
     text-decoration: none;
     text-align: center;
     border-radius: 10%;
+    transition: 0.2s;
 }
 
 main .btns {
@@ -185,7 +196,14 @@ main .btns {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    /* padding-right: 25px; */
+}
+
+.btns div:hover {
+    transition: 0.4s;
+    transform: scale(1.1);
+    box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
 }
 
 main .text {
@@ -198,6 +216,7 @@ main .text {
 main .text a {
     width: 130px;
     text-align: center;
+    transition: 0.2s;
 }
 
 .text-container {
@@ -243,6 +262,7 @@ main .btns a {
     text-decoration: none;
     border-radius: 10% !important;
     padding: 2px !important;
+    transition: 0.2s;
 }
 
 main .btns h3 {
@@ -305,34 +325,76 @@ main .carousel img {
 }
 
 /*! PRODUCTOS */
-.main-productos h1{
+.main-productos h1 {
     margin: 5px;
     padding: 5px;
 }
 
-.shirts-container p{
-    font-size: 20px;
+.main-productos p {
+    padding: 7px;
+}
+
+.shirts-container p {
+    font-size: 25px;
     text-align: left;
 }
 
-.card-shirts{
+.card-shirts {
     display: flex;
     justify-content: space-evenly;
+    width: 50%;
 }
 
-.card-shirts img{
+.card-shirts img {
     width: 80%;
     height: 180px;
 }
 
+.card {
+    background-color: #aebacc !important;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.card:hover {
+    transition: 0.4s;
+    transform: scale(1.1);
+    box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+}
+
+.card a{
+    text-decoration: none;
+    background-color: #191013;
+    border-radius: 5%;
+    font-size: 20px;
+    color: #f4f4f2;
+}
+
+.history-container p{
+    font-size: 25px;
+}
+
+.text-produ-container p{
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+
 /*? SERVICIOS  */
 
-.servicios-page h1{
+.servicios-page h1 {
     padding: 10px;
     margin-bottom: 0px;
 }
 
-.servicios-page p{
+.servicios-page p {
     font-size: 20px;
     padding: 10px;
     margin-bottom: 0px;
@@ -345,40 +407,40 @@ main .carousel img {
     margin: 5px;
 }
 
-.service-first p{
+.service-first p {
     margin-left: 5px;
     margin-right: 5px;
     text-align: start;
 }
 
-.service-first{
+.service-first {
     display: flex;
     justify-content: space-evenly;
 }
 
-.service-two img{
+.service-two img {
     margin: 5px;
 }
 
-.service-two p{
+.service-two p {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.service-two{
+.service-two {
     display: flex;
     align-items: center;
 }
 
 /*? NOSOTROS */
-.nosotros-main h1{
+.nosotros-main h1 {
     margin-left: 10px;
     margin-bottom: 0px;
     padding-top: 10px;
 }
 
-.nosotros-main p{
+.nosotros-main p {
     padding: 10px;
     font-size: 23px;
     margin-bottom: 0px;
@@ -398,38 +460,45 @@ main .carousel img {
     height: 100vh;
 }
 
+/*! BUTTON */
+.button:hover {
+    color: black;
+    background-color: #4561ad;
+}
+
 /*? CONTACTOS */
 
-.contactos-page h1{
+.contactos-page h1 {
     margin-bottom: 0px;
 
 }
 
-.contactos-page p{
+.contactos-page p {
     margin-bottom: 0px;
     font-size: 20px;
 }
 
-.contactos-page ul{
+.contactos-page ul {
     margin-top: 10px;
     margin-bottom: 0px;
     font-size: 19px;
 }
 
-.contactos-page img{
+.contactos-page img {
     width: 700px;
     height: 100%;
 }
-.contactos-page{
+
+.contactos-page {
     display: flex;
     justify-content: space-evenly;
 }
 
-.text-cont-container{
+.text-cont-container {
     padding: 5px;
 }
 
-.text-cont-container a{
+.text-cont-container a {
     text-decoration: none;
 }
 
@@ -975,13 +1044,14 @@ footer .icon-container p {
 
 /*! SERVICIOS */
 
-@media screen and (max-width: 900px){
-    .service-first{
+@media screen and (max-width: 900px) {
+    .service-first {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
     }
-    .service-two{
+
+    .service-two {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -989,10 +1059,11 @@ footer .icon-container p {
 }
 
 @media screen and (max-width: 500px) {
-    .service-first img{
+    .service-first img {
         width: 80%;
     }
-    .service-two img{
+
+    .service-two img {
         width: 80%;
     }
 }
@@ -1000,19 +1071,19 @@ footer .icon-container p {
 /*! NOSOTROS */
 
 @media screen and (max-width: 990px) {
-    .carousel-fade{
+    .carousel-fade {
         width: 80%;
     }
 }
 
 @media screen and (max-width: 860px) {
-    .carousel-fade{
+    .carousel-fade {
         width: 70%;
     }
 }
 
 @media screen and (max-width: 400px) {
-    .carousel-fade{
+    .carousel-fade {
         width: 80%;
     }
 }
@@ -1020,50 +1091,60 @@ footer .icon-container p {
 /*! CONTACTOS */
 
 @media screen and (max-width: 1000px) {
-    .img-contact img{
+    .img-contact img {
         height: 100%;
         width: 700px;
     }
 }
 
-@media  screen and (max-width: 978px) {
-    .img-contact img{
-        width: 600px ;
+@media screen and (max-width: 978px) {
+    .img-contact img {
+        width: 600px;
     }
 }
 
-@media  screen and (max-width: 918px){
-    .img-contact img{
-        width: 550px ;
+@media screen and (max-width: 918px) {
+    .img-contact img {
+        width: 550px;
     }
 }
 
-@media  screen and (max-width: 855px){
-    .img-contact img{
-        width: 500px ;
+@media screen and (max-width: 855px) {
+    .img-contact img {
+        width: 500px;
     }
 }
 
-@media  screen and (max-width: 800px){
-    .img-contact img{
-        width: 400px ;
+@media screen and (max-width: 800px) {
+    .img-contact img {
+        width: 400px;
         height: 100%;
     }
 }
 
-@media  screen and (max-width: 703px){
-    .contactos-page{
+@media screen and (max-width: 703px) {
+    .contactos-page {
         display: flex;
         flex-direction: column;
     }
-    .img-contact{
+
+    .img-contact {
         align-items: center;
         text-align: center;
         width: 100%;
     }
-    .img-contact img{
+
+    .img-contact img {
         width: 100%;
     }
 }
 
 /*! PRODUCTOS */
+
+@media screen and (max-width: 643px){
+    .card-shirts{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+}

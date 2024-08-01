@@ -494,3 +494,10 @@
 }
 
 /*! PRODUCTOS */
+@media screen and (max-width: 643px){
+    .card-shirts{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+}
