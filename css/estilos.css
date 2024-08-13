@@ -27,18 +27,22 @@
   display: flex;
   justify-content: space-between; }
 
-header nav .navbar-container .navbar {
+header .navbar-container .navbar {
   background-color: #002038; }
-  header nav .navbar-container .navbar .container-fluid h1 {
+  header .navbar-container .navbar .container-fluid h1 {
     color: #f4f4f2;
     display: flex;
     text-align: center;
     font-size: 30px; }
-  header nav .navbar-container .navbar .container-fluid .imagenes {
-    width: 70px; }
-  header nav .navbar-container .navbar .container-fluid .navbar-toggler {
+  header .navbar-container .navbar .container-fluid .offcanvas {
+    background-color: #002038 !important; }
+  header .navbar-container .navbar .container-fluid .text-bg-dark {
+    background-color: white; }
+  header .navbar-container .navbar .container-fluid .navbar-toggler {
     background-color: #243a69; }
-  header nav .navbar-container .navbar .container-fluid .offcanvas-body li a {
+  header .navbar-container .navbar .container-fluid .imagenes {
+    width: 70px; }
+  header .navbar-container .navbar .container-fluid .offcanvas-body li a {
     color: #f4f4f2 !important; }
 
 /* INDEX */
@@ -71,16 +75,22 @@ main {
       color: #f4f4f2;
       margin: 10px;
       text-align: left; }
-  main div h2 {
-    margin: 5px; }
-  main div p {
-    margin: 5px; }
-  main div .club {
+  main .buy {
+    background-color: #5757575d;
+    border: 2px solid #2b2b2e;
+    border-right: none;
+    border-left: none; }
+    main .buy h2 {
+      margin: 5px; }
+    main .buy p {
+      margin: 5px; }
+  main .buy2 .club {
     margin: 10px 0;
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     width: 100%; }
-    main div .club div {
+    main .buy2 .club div {
       margin: 5px;
       padding: 3px;
       border: 2px solid grey;
@@ -89,16 +99,16 @@ main {
       text-align: center;
       background-color: #aebacc;
       display: inline-block; }
-      main div .club div:hover {
+      main .buy2 .club div:hover {
         transition: 0.4s;
         transform: scale(1.1);
         box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
         -webkit-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75); }
-      main div .club div img {
+      main .buy2 .club div img {
         width: 100%;
         height: 250px; }
-      main div .club div a {
+      main .buy2 .club div a {
         font-size: 20px;
         color: white;
         background-color: #191013;
@@ -106,113 +116,135 @@ main {
         border-radius: 10%;
         padding: 2px;
         transition: 0.2s; }
-      main div .club div h3 {
+      main .buy2 .club div h3 {
         font-size: 27px; }
-      main div .club div p {
+      main .buy2 .club div p {
         font-size: 20px; }
-  main .buy2 {
-    background-color: #5757575d;
-    border: 2px solid #2b2b2e;
-    border-right: none;
+
+h2 {
+  padding: 3px;
+  margin: 2px;
+  font-size: 40px; }
+
+p {
+  padding: 3px;
+  margin: 2px;
+  font-size: 20px; }
+
+.vdo {
+  display: flex;
+  justify-content: space-between; }
+  .vdo p {
+    font-size: 40px;
+    margin: 0px;
+    padding: 0px; }
+  .vdo img {
+    width: 700px; }
+  .vdo a {
+    font-size: 27px;
+    color: white;
+    background-color: #191013;
+    margin: 3px;
+    padding: 2px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10%;
+    transition: 0.2s; }
+  .vdo .caja_1 {
+    border: #191013 solid 3px;
     border-left: none; }
-    main .buy2 h2 {
-      padding: 3px;
-      margin: 2px;
-      font-size: 40px; }
-    main .buy2 p {
-      padding: 3px;
-      margin: 2px;
-      font-size: 20px; }
-    main .buy2 .vdo {
-      display: flex;
-      justify-content: space-between; }
-      main .buy2 .vdo .caja_1 img {
-        width: 700px; }
-      main .buy2 .vdo .text {
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        padding: 10px; }
-        main .buy2 .vdo .text p {
-          font-size: 40px;
-          margin: 0px;
-          padding: 0px; }
-        main .buy2 .vdo .text a {
-          font-size: 27px;
-          color: white;
-          background-color: #191013;
-          margin: 3px;
-          padding: 2px;
-          text-decoration: none;
-          text-align: center;
-          border-radius: 10%;
-          transition: 0.2s;
-          width: 130px;
-          text-align: center;
-          transition: 0.2s; }
-  main .btns {
-    margin: 10px 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly; }
-    main .btns div {
-      margin: 5px;
-      padding: 3px;
-      border: 2px solid grey;
-      width: 300px;
-      height: 380px;
-      text-align: center;
-      background-color: whitesmoke;
-      display: inline-block; }
-      main .btns div:hover {
-        transition: 0.4s;
-        transform: scale(1.1);
-        box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
-        -webkit-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75); }
-    main .btns a {
-      font-size: 20px;
-      color: white;
-      background-color: #191013;
-      text-decoration: none;
-      border-radius: 10% !important;
-      padding: 2px !important;
-      transition: 0.2s; }
-    main .btns h3 {
-      font-size: 25px;
-      color: black;
-      width: 100%; }
-    main .btns p {
-      font-size: 20px; }
-    main .btns img {
-      width: 100%;
-      height: 250px; }
-  main .text-container {
-    border: 2px solid #2b2b2e;
-    background-color: #5757575d;
-    border-right: none;
-    border-left: none; }
-    main .text-container h2 {
-      padding: 3px;
-      margin: 2px;
-      font-size: 40px; }
-    main .text-container p {
-      padding: 3px;
-      margin: 2px;
-      font-size: 20px; }
-  main .carouselm {
+    .vdo .caja_1 img {
+      width: 700px; }
+  .vdo .text {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-self: center;
+    padding: 10px; }
+    .vdo .text p {
+      font-size: 40px;
+      margin: 0px;
+      padding: 0px; }
+    .vdo .text a {
+      font-size: 27px;
+      color: white;
+      background-color: #191013;
+      margin: 3px;
+      padding: 2px;
+      text-decoration: none;
+      text-align: center;
+      border-radius: 10%;
+      transition: 0.2s;
+      width: 130px;
+      text-align: center;
+      transition: 0.2s; }
+
+.btns {
+  margin: 10px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+  .btns div {
+    margin: 5px;
+    padding: 3px;
+    border: 2px solid grey;
+    width: 300px;
+    height: 380px;
+    text-align: center;
+    background-color: whitesmoke;
+    display: inline-block; }
+    .btns div:hover {
+      transition: 0.4s;
+      transform: scale(1.1);
+      box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75); }
+  .btns a {
+    font-size: 20px;
+    color: white;
+    background-color: #191013;
+    text-decoration: none;
+    border-radius: 10% !important;
+    padding: 2px !important;
+    transition: 0.2s; }
+  .btns h3 {
+    font-size: 25px;
+    color: black;
+    width: 100%; }
+  .btns p {
+    font-size: 20px; }
+  .btns img {
     width: 100%;
-    padding: 3px; }
-  main .carousel {
-    width: 800px;
-    display: flex;
-    align-items: center; }
-    main .carousel img {
-      width: 450px;
-      height: 100vh; }
+    height: 250px; }
+
+.text-container {
+  border: 2px solid #2b2b2e;
+  background-color: #5757575d;
+  border-right: none;
+  border-left: none; }
+  .text-container h2 {
+    padding: 3px;
+    margin: 2px;
+    font-size: 40px; }
+  .text-container p {
+    padding: 3px;
+    margin: 2px;
+    font-size: 20px; }
+
+.carouselm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 3px; }
+
+.carousel {
+  width: 800px;
+  display: flex;
+  align-items: center; }
+  .carousel img {
+    width: 450px;
+    height: 100vh; }
 
 /* CUENTA */
 .cuenta {
@@ -229,120 +261,160 @@ main {
       margin: 10px; }
 
 /* PRODUCTOS */
-.main-productos {
-  /* SERVICIOS */
-  /* NOSOTROS */
-  /* CONTACTOS */ }
-  .main-productos p {
-    padding: 7px; }
-  .main-productos .shirts-container div h1 {
-    margin: 5px;
-    padding: 5px; }
-  .main-productos .shirts-container div p {
-    font-size: 20px;
-    text-align: left; }
-  .main-productos .shirts-container .card-shirts {
-    display: flex;
-    justify-content: space-evenly;
-    width: 50%; }
-    .main-productos .shirts-container .card-shirts img {
-      width: 80%;
-      height: 180px; }
-  .main-productos .shirts-container .history-container p {
-    font-size: 25px; }
-  .main-productos .shirts-container .history-container .card {
-    background-color: #aebacc !important;
-    align-items: center;
+.main-productos p {
+  padding: 7px; }
+
+.main-productos .img-productos-container {
+  padding-right: 50px;
+  padding-left: 50px;
+  width: 100%;
+  height: 400px; }
+  .main-productos .img-productos-container img {
     width: 100%;
     height: 100%; }
-    .main-productos .shirts-container .history-container .card:hover {
-      transition: 0.4s;
-      transform: scale(1.1);
-      box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
-      -webkit-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75); }
-    .main-productos .shirts-container .history-container .card img {
-      width: 200px;
-      height: 200px; }
-    .main-productos .shirts-container .history-container .card a {
-      text-decoration: none;
-      background-color: #191013;
-      border-radius: 5%;
-      font-size: 20px;
-      color: #f4f4f2; }
-  .main-productos .shirts-container .text-produ-container p {
-    font-size: 25px;
-    margin-bottom: 0px; }
-  .main-productos .servicios-page h1 {
-    padding: 10px;
-    margin-bottom: 0px; }
-  .main-productos .servicios-page p {
-    font-size: 20px;
-    padding: 10px;
+
+.main-productos .shirts-container .h1-productos {
+  text-align: center; }
+  .main-productos .shirts-container .h1-productos h1 {
+    font-size: 60px;
+    margin: 5px;
+    padding: 5px;
     margin-bottom: 0px;
-    text-align: justify; }
-  .main-productos .servicios-page .service-first {
+    padding-bottom: 0px;
+    text-align: center; }
+  .main-productos .shirts-container .h1-productos a {
+    text-decoration: none;
+    background-color: #191013;
+    color: white;
+    font-size: 30px;
+    border-radius: 10%; }
+
+.main-productos .shirts-container div p {
+  font-size: 24px;
+  text-align: left; }
+
+.main-productos .shirts-container .card-shirts {
+  display: flex;
+  flex-direction: row !important; }
+  .main-productos .shirts-container .card-shirts img {
+    width: 80%;
+    height: 180px; }
+  .main-productos .shirts-container .card-shirts .card {
+    width: 100px !important;
     display: flex;
-    justify-content: space-evenly; }
-    .main-productos .servicios-page .service-first img {
-      width: 500px;
-      height: 250px;
-      margin: 5px; }
-    .main-productos .servicios-page .service-first p {
-      margin-left: 5px;
-      margin-right: 5px;
-      text-align: start; }
-  .main-productos .servicios-page .service-two {
-    display: flex;
-    align-items: center; }
-    .main-productos .servicios-page .service-two img {
-      margin: 5px; }
-    .main-productos .servicios-page .service-two p {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start; }
-  .main-productos .nosotros-main h1 {
-    margin-left: 10px;
-    margin-bottom: 0px;
-    padding-top: 10px; }
-  .main-productos .nosotros-main p {
+    flex-direction: row; }
+
+.main-productos .shirts-container .history-container p {
+  font-size: 25px; }
+
+.main-productos .shirts-container .history-container img {
+  width: 200px;
+  height: 200px; }
+
+.main-productos .shirts-container .history-container a {
+  text-decoration: none;
+  background-color: #191013;
+  border-radius: 5%;
+  font-size: 20px;
+  color: #f4f4f2; }
+
+.main-productos .shirts-container .productos-img {
+  margin: 5px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  .main-productos .shirts-container .productos-img img {
     padding: 10px;
-    font-size: 23px;
-    margin-bottom: 0px; }
-  .main-productos .nosotros-main .carousel-nos {
+    width: 600px;
+    height: 450px; }
+
+.main-productos .text-produ-container p {
+  font-size: 25px;
+  margin-bottom: 0px; }
+
+/* SERVICIOS */
+.servicios-page h1 {
+  padding: 10px;
+  margin-bottom: 0px; }
+
+.servicios-page p {
+  font-size: 20px;
+  padding: 10px;
+  margin-bottom: 0px;
+  text-align: justify; }
+
+.servicios-page .service-first {
+  display: flex;
+  justify-content: space-evenly; }
+  .servicios-page .service-first img {
+    width: 500px;
+    height: 250px;
+    margin: 5px; }
+  .servicios-page .service-first p {
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: start; }
+
+.servicios-page .service-two {
+  display: flex;
+  align-items: center; }
+  .servicios-page .service-two img {
+    margin: 5px; }
+  .servicios-page .service-two p {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding-bottom: 10px; }
-    .main-productos .nosotros-main .carousel-nos img {
-      width: 450px;
-      height: 100vh; }
-  .main-productos .contactos-page {
-    display: flex;
-    justify-content: space-evenly; }
-    .main-productos .contactos-page .text-cont-container {
-      padding: 5px; }
-      .main-productos .contactos-page .text-cont-container a {
-        text-decoration: none; }
-      .main-productos .contactos-page .text-cont-container h1 {
-        margin-bottom: 0px; }
-      .main-productos .contactos-page .text-cont-container p {
-        margin-bottom: 0px;
-        font-size: 20px; }
-      .main-productos .contactos-page .text-cont-container ul {
-        margin-top: 10px;
-        margin-bottom: 0px;
-        font-size: 19px; }
-    .main-productos .contactos-page img {
-      width: 700px;
-      height: 100%; }
+    align-items: flex-start; }
+
+/* NOSOTROS */
+.nosotros-main h1 {
+  margin-left: 10px;
+  margin-bottom: 0px;
+  padding-top: 10px; }
+
+.nosotros-main p {
+  padding: 10px;
+  font-size: 23px;
+  margin-bottom: 0px; }
+
+.nosotros-main .carousel-nos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 10px; }
+  .nosotros-main .carousel-nos img {
+    width: 450px;
+    height: 100vh; }
+
+/* CONTACTOS */
+.contactos-page {
+  display: flex;
+  justify-content: space-evenly; }
+  .contactos-page .text-cont-container {
+    padding: 5px; }
+    .contactos-page .text-cont-container a {
+      text-decoration: none; }
+    .contactos-page .text-cont-container h1 {
+      margin-bottom: 0px; }
+    .contactos-page .text-cont-container p {
+      margin-bottom: 0px;
+      font-size: 20px; }
+    .contactos-page .text-cont-container ul {
+      margin-top: 10px;
+      margin-bottom: 0px;
+      font-size: 19px; }
+  .contactos-page img {
+    width: 700px;
+    height: 100%; }
 
 footer {
   margin: 0px;
   padding: 8px;
   background-color: #243a69;
   width: 100%; }
+  footer div a img {
+    width: 40px; }
   footer .foot-page {
     display: flex;
     justify-content: space-between; }
@@ -376,7 +448,8 @@ footer {
           width: 100%;
           height: 100%; }
           footer .foot-page .end .icon-container .follow p {
-            width: 40px; }
+            list-style: none;
+            font-size: 40px; }
         footer .foot-page .end .icon-container .wpp {
           grid-area: wpp;
           width: 100%;
@@ -399,7 +472,7 @@ footer {
         margin: 5px;
         display: flex;
         justify-content: center; }
-        footer .foot-page .end .map-container div iframe {
+        footer .foot-page .end .map-container div section iframe {
           width: 100% !important;
           height: 100% !important;
           display: flex;
@@ -411,7 +484,6 @@ footer {
           text-align: center;
           margin-bottom: 0px !important; }
 
-/*!--MEDIA--*/
 /*? INDEX */
 @media screen and (max-width: 1068px) {
   main .btns h3 {
@@ -740,8 +812,3 @@ footer {
     width: 100%; } }
 
 /*! PRODUCTOS */
-@media screen and (max-width: 643px) {
-  .card-shirts {
-    width: 100%;
-    display: flex;
-    align-items: center; } }

@@ -1,4 +1,3 @@
-/*!--MEDIA--*/
 /*? INDEX */
 @media screen and (max-width:1068px) {
     main .btns h3 {
@@ -402,13 +401,14 @@
 
 /*! SERVICIOS */
 
-@media screen and (max-width: 900px){
-    .service-first{
+@media screen and (max-width: 900px) {
+    .service-first {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
     }
-    .service-two{
+
+    .service-two {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -416,10 +416,11 @@
 }
 
 @media screen and (max-width: 500px) {
-    .service-first img{
+    .service-first img {
         width: 80%;
     }
-    .service-two img{
+
+    .service-two img {
         width: 80%;
     }
 }
@@ -427,19 +428,19 @@
 /*! NOSOTROS */
 
 @media screen and (max-width: 990px) {
-    .carousel-fade{
+    .carousel-fade {
         width: 80%;
     }
 }
 
 @media screen and (max-width: 860px) {
-    .carousel-fade{
+    .carousel-fade {
         width: 70%;
     }
 }
 
 @media screen and (max-width: 400px) {
-    .carousel-fade{
+    .carousel-fade {
         width: 80%;
     }
 }
@@ -447,57 +448,52 @@
 /*! CONTACTOS */
 
 @media screen and (max-width: 1000px) {
-    .img-contact img{
+    .img-contact img {
         height: 100%;
         width: 700px;
     }
 }
 
-@media  screen and (max-width: 978px) {
-    .img-contact img{
-        width: 600px ;
+@media screen and (max-width: 978px) {
+    .img-contact img {
+        width: 600px;
     }
 }
 
-@media  screen and (max-width: 918px){
-    .img-contact img{
-        width: 550px ;
+@media screen and (max-width: 918px) {
+    .img-contact img {
+        width: 550px;
     }
 }
 
-@media  screen and (max-width: 855px){
-    .img-contact img{
-        width: 500px ;
+@media screen and (max-width: 855px) {
+    .img-contact img {
+        width: 500px;
     }
 }
 
-@media  screen and (max-width: 800px){
-    .img-contact img{
-        width: 400px ;
+@media screen and (max-width: 800px) {
+    .img-contact img {
+        width: 400px;
         height: 100%;
     }
 }
 
-@media  screen and (max-width: 703px){
-    .contactos-page{
+@media screen and (max-width: 703px) {
+    .contactos-page {
         display: flex;
         flex-direction: column;
     }
-    .img-contact{
+
+    .img-contact {
         align-items: center;
         text-align: center;
         width: 100%;
     }
-    .img-contact img{
+
+    .img-contact img {
         width: 100%;
     }
 }
 
 /*! PRODUCTOS */
-@media screen and (max-width: 643px){
-    .card-shirts{
-        width: 100%;
-        display: flex;
-        align-items: center;
-    }
-}
