@@ -46,9 +46,9 @@ header .navbar-container .navbar {
     color: #f4f4f2 !important; }
 
 /* INDEX */
-main {
+.cuerpo-page {
   background-color: #d4cdc5; }
-  main .fdj {
+  .cuerpo-page .fdj {
     padding: 3px;
     width: 100%;
     height: calc(80vh - 50px);
@@ -60,7 +60,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: flex-end; }
-    main .fdj a {
+    .cuerpo-page .fdj a {
       color: #f4f4f2;
       margin: 10px;
       text-align: left;
@@ -69,28 +69,28 @@ main {
       background-color: #2b2b2e;
       border-radius: 10%;
       transition: 0.2s; }
-    main .fdj p {
+    .cuerpo-page .fdj p {
       width: 45%;
       font-size: 30px;
       color: #f4f4f2;
       margin: 10px;
       text-align: left; }
-  main .buy {
+  .cuerpo-page .buy {
     background-color: #5757575d;
     border: 2px solid #2b2b2e;
     border-right: none;
     border-left: none; }
-    main .buy h2 {
+    .cuerpo-page .buy h2 {
       margin: 5px; }
-    main .buy p {
+    .cuerpo-page .buy p {
       margin: 5px; }
-  main .buy2 .club {
+  .cuerpo-page .buy2 .club {
     margin: 10px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%; }
-    main .buy2 .club div {
+    .cuerpo-page .buy2 .club div {
       margin: 5px;
       padding: 3px;
       border: 2px solid grey;
@@ -99,16 +99,16 @@ main {
       text-align: center;
       background-color: #aebacc;
       display: inline-block; }
-      main .buy2 .club div:hover {
+      .cuerpo-page .buy2 .club div:hover {
         transition: 0.4s;
         transform: scale(1.1);
         box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
         -webkit-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75); }
-      main .buy2 .club div img {
+      .cuerpo-page .buy2 .club div img {
         width: 100%;
         height: 250px; }
-      main .buy2 .club div a {
+      .cuerpo-page .buy2 .club div a {
         font-size: 20px;
         color: white;
         background-color: #191013;
@@ -116,9 +116,9 @@ main {
         border-radius: 10%;
         padding: 2px;
         transition: 0.2s; }
-      main .buy2 .club div h3 {
+      .cuerpo-page .buy2 .club div h3 {
         font-size: 27px; }
-      main .buy2 .club div p {
+      .cuerpo-page .buy2 .club div p {
         font-size: 20px; }
 
 h2 {
@@ -249,7 +249,7 @@ p {
 /* CUENTA */
 .cuenta {
   background-image: url(../img/fondo.cuenta.jpg);
-  padding: 35px;
+  padding: 45px;
   height: 100%; }
   .cuenta .formulario {
     background-color: burlywood;
@@ -265,10 +265,10 @@ p {
   padding: 7px; }
 
 .main-productos .img-productos-container {
-  padding-right: 50px;
-  padding-left: 50px;
+  padding-right: 70px;
+  padding-left: 70px;
   width: 100%;
-  height: 400px; }
+  height: 500px; }
   .main-productos .img-productos-container img {
     width: 100%;
     height: 100%; }
@@ -295,14 +295,33 @@ p {
 
 .main-productos .shirts-container .card-shirts {
   display: flex;
-  flex-direction: row !important; }
+  flex-direction: row !important;
+  justify-content: space-around;
+  height: 70%; }
+  .main-productos .shirts-container .card-shirts section {
+    display: flex;
+    justify-content: center; }
   .main-productos .shirts-container .card-shirts img {
     width: 80%;
     height: 180px; }
   .main-productos .shirts-container .card-shirts .card {
-    width: 100px !important;
+    width: 80% !important;
     display: flex;
-    flex-direction: row; }
+    align-items: center; }
+    .main-productos .shirts-container .card-shirts .card h3 {
+      margin-bottom: 0px; }
+    .main-productos .shirts-container .card-shirts .card a {
+      text-decoration: none;
+      background-color: #191013;
+      color: white;
+      font-size: 20px;
+      border-radius: 10%; }
+    .main-productos .shirts-container .card-shirts .card:hover {
+      transition: 0.4s;
+      transform: scale(1.1);
+      box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75); }
 
 .main-productos .shirts-container .history-container p {
   font-size: 25px; }
@@ -327,11 +346,27 @@ p {
   .main-productos .shirts-container .productos-img img {
     padding: 10px;
     width: 600px;
-    height: 450px; }
+    height: 450px;
+    transition: 3s; }
+    .main-productos .shirts-container .productos-img img:hover {
+      transform: rotateX(360deg); }
 
 .main-productos .text-produ-container p {
   font-size: 25px;
   margin-bottom: 0px; }
+
+.main-productos .productos-fondos2 {
+  align-content: center;
+  align-items: center;
+  text-align: center; }
+  .main-productos .productos-fondos2 img {
+    margin: 10px;
+    padding: 20px;
+    width: 80%;
+    height: 400px;
+    transition: 3s; }
+    .main-productos .productos-fondos2 img:hover {
+      transform: rotateY(360deg); }
 
 /* SERVICIOS */
 .servicios-page h1 {
@@ -377,15 +412,50 @@ p {
   font-size: 23px;
   margin-bottom: 0px; }
 
-.nosotros-main .carousel-nos {
+.nosotros-main .card-nos {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+  flex-direction: row !important;
+  justify-content: space-around;
+  padding-bottom: 10px;
+  margin-bottom: 5px; }
+  .nosotros-main .card-nos img {
+    height: 100%;
+    height: 194px; }
+  .nosotros-main .card-nos .card:hover {
+    transition: 0.4s;
+    transform: scale(1);
+    box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75); }
+
+.nosotros-main .card-nos2 {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-around;
+  padding-bottom: 10px;
+  margin-bottom: 5px; }
+  .nosotros-main .card-nos2 img {
+    height: 194px; }
+  .nosotros-main .card-nos2 .card:hover {
+    transition: 0.4s;
+    transform: scale(1);
+    box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75); }
+
+.nosotros-main .card-nos3 {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-around;
   padding-bottom: 10px; }
-  .nosotros-main .carousel-nos img {
-    width: 450px;
-    height: 100vh; }
+  .nosotros-main .card-nos3 .card:hover {
+    transition: 0.4s;
+    transform: scale(1);
+    box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75); }
+  .nosotros-main .card-nos3 img {
+    height: 194px; }
 
 /* CONTACTOS */
 .contactos-page {
@@ -484,7 +554,7 @@ footer {
           text-align: center;
           margin-bottom: 0px !important; }
 
-/*? INDEX */
+/* INDEX **/
 @media screen and (max-width: 1068px) {
   main .btns h3 {
     font-size: 22px; } }
@@ -812,3 +882,6 @@ footer {
     width: 100%; } }
 
 /*! PRODUCTOS */
+@media screen and (max-width: 1069px) {
+  .productos-img img {
+    width: 100%; } }

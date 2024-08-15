@@ -1,4 +1,4 @@
-/*? INDEX */
+/* INDEX **/
 @media screen and (max-width:1068px) {
     main .btns h3 {
         font-size: 22px;
@@ -497,3 +497,10 @@
 }
 
 /*! PRODUCTOS */
+@media screen and (max-width:1069px){
+    .productos-img{
+        img{
+            width: 100%;
+        }
+    }
+}
