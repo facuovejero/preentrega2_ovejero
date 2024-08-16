@@ -8,7 +8,6 @@
   font-style: normal; }
 
 /* Variables que se usan en muchos lugares */
-/* ANIDAR CLASES DE BOOTSTRAPS CON IMPORTANT*/
 .fdj, .club, .btns {
   display: flex;
   flex-direction: column;
@@ -18,7 +17,6 @@
   display: flex;
   justify-content: space-evenly; }
 
-/* MIXIN */
 .btns {
   display: flex;
   justify-content: space-evenly; }
@@ -26,6 +24,9 @@
 .club {
   display: flex;
   justify-content: space-between; }
+
+.footer {
+  border: solid 2px black; }
 
 header .navbar-container .navbar {
   background-color: #002038; }
@@ -150,10 +151,10 @@ p {
     text-align: center;
     border-radius: 10%;
     transition: 0.2s; }
-  .vdo .caja_1 {
+  .vdo .caja-1 {
     border: #191013 solid 3px;
     border-left: none; }
-    .vdo .caja_1 img {
+    .vdo .caja-1 img {
       width: 700px; }
   .vdo .text {
     display: flex;
@@ -265,8 +266,8 @@ p {
   padding: 7px; }
 
 .main-productos .img-productos-container {
-  padding-right: 70px;
-  padding-left: 70px;
+  padding-right: 80px;
+  padding-left: 80px;
   width: 100%;
   height: 500px; }
   .main-productos .img-productos-container img {
@@ -322,6 +323,10 @@ p {
       box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
       -webkit-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
       -moz-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75); }
+  .main-productos .shirts-container .card-shirts section .dibu {
+    margin-top: 5px; }
+  .main-productos .shirts-container .card-shirts section .belg {
+    margin-top: 5px; }
 
 .main-productos .shirts-container .history-container p {
   font-size: 25px; }
@@ -556,35 +561,34 @@ footer {
 
 /* INDEX **/
 @media screen and (max-width: 1068px) {
-  main .btns h3 {
+  .cuerpo-page .btns h3 {
     font-size: 22px; } }
 
 @media screen and (max-width: 1043px) {
-  main .caja_1 img {
+  .cuerpo-page .caja-1 img {
     width: 680px;
     height: 394px; } }
 
 @media screen and (max-width: 1023px) {
-  main .caja_1 img {
-    width: 670px;
-    height: 394px; } }
+  .caja-1 img {
+    width: 640px !important;
+    height: 394px !important; } }
 
 @media screen and (max-width: 1013px) {
-  main .caja_1 img {
-    width: 660px;
-    height: 394px; } }
+  .caja-1 img {
+    width: 660px; } }
 
 @media screen and (max-width: 986px) {
-  main .club h3 {
-    font-size: 24px; }
-  main .btns h3 {
-    font-size: 24px; } }
+  .cuerpo-page .club h3 {
+    font-size: 24px !important; }
+  .cuerpo-page .btns h3 {
+    font-size: 24px !important; } }
 
-@media screen and (max-width: 949px) {
-  main .club {
+@media screen and (max-width: 948px) {
+  .cuerpo-page .club {
     margin: 0px;
     padding: 5px;
-    display: grid;
+    display: grid !important;
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
     grid-template-columns: 1fr 1fr;
@@ -597,15 +601,15 @@ footer {
     align-items: stretch;
     width: 100%;
     height: 100%; }
-  .cami-1 {
+  .cuerpo-page .cami-1 {
     grid-area: cami-1; }
-  .cami-2 {
+  .cuerpo-page .cami-2 {
     grid-area: cami-2; }
-  .cami-3 {
+  .cuerpo-page .cami-3 {
     grid-area: cami-3; }
-  .cami-4 {
+  .cuerpo-page .cami-4 {
     grid-area: cami-4; }
-  main .btns {
+  .cuerpo-page .btns {
     margin: 0px;
     padding: 5px;
     display: grid;
@@ -621,62 +625,52 @@ footer {
     align-items: stretch;
     width: 100%;
     height: 100%; }
-  .botin-1 {
+  .cuerpo-page .botin-1 {
     grid-area: botin-1; }
-  .botin-2 {
+  .cuerpo-page .botin-2 {
     grid-area: botin-2; }
-  .botin-3 {
+  .cuerpo-page .botin-3 {
     grid-area: botin-3; }
-  .botin-4 {
+  .cuerpo-page .botin-4 {
     grid-area: botin-4; }
-  main .caja_1 img {
+  .caja-1 img {
     width: 640px;
     height: 394px; } }
 
 @media screen and (max-width: 926px) {
-  main .caja_1 img {
+  .caja-1 img {
     width: 630px;
     height: 394px; } }
 
-@media screen and (max-width: 903px) {
-  main .caja_1 {
+@media screen and (max-width: 843px) {
+  .caja-1 {
     width: 100%;
     height: 100%; }
-  main .caja_1 img {
-    width: 650px;
-    height: 390px; } }
-
-@media screen and (max-width: 889px) {
-  main .caja_1 img {
-    width: 600px;
-    height: 394px; } }
-
-@media screen and (max-width: 855px) {
-  main .caja_1 img {
-    width: 580px;
-    height: 394px; } }
+    .caja-1 img {
+      width: 580px !important;
+      height: 370px !important; } }
 
 @media screen and (max-width: 827px) {
-  main .carousel {
+  .carousel {
     width: 700px;
     display: flex;
     align-items: center; } }
 
 @media screen and (max-width: 806px) {
-  main .carousel {
+  .carousel {
     width: 600px;
     display: flex;
     align-items: center; } }
 
-@media screen and (max-width: 791px) {
-  main .caja_1 img {
-    width: 550px;
+@media screen and (max-width: 783px) {
+  .caja-1 img {
+    width: 550px !important;
     height: 394px; } }
 
-@media screen and (max-width: 773px) {
-  main .caja_1 img {
-    width: 530px;
-    height: 394px; } }
+@media screen and (max-width: 753px) {
+  .caja-1 img {
+    width: 530px !important;
+    height: 365px !important; } }
 
 @media screen and (max-width: 745px) {
   .foot-page {
@@ -697,39 +691,39 @@ footer {
     padding: 5px; } }
 
 @media screen and (max-width: 735px) {
-  main .club {
+  .cuerpo-page .club {
+    height: 50% !important;
+    margin-bottom: 20px; }
+    .cuerpo-page .club div {
+      width: 80% !important;
+      height: 100% !important; }
+    .cuerpo-page .club img {
+      width: 70% !important;
+      height: 60% !important; }
+  .cuerpo-page .btns {
     height: 50%;
     margin-bottom: 20px; }
-  main .club div {
-    width: 80%;
-    height: 100%; }
-  main .club img {
-    width: 70%;
-    height: 60%; }
-  main .btns {
-    height: 50%;
-    margin-bottom: 20px; }
-  main .btns div {
-    width: 80%;
-    height: 100%; }
-  main .btns img {
-    width: 70%;
-    height: 60%; }
-  .vdo {
+    .cuerpo-page .btns div {
+      width: 80%;
+      height: 100%; }
+    .cuerpo-page .btns img {
+      width: 70%;
+      height: 60%; }
+  .cuerpo-page .vdo {
     display: flex;
     flex-direction: column; }
-  main .caja_1 {
+  .cuerpo-page .caja-1 {
     border-right: none; }
-  .text {
+    .cuerpo-page .caja-1 img {
+      width: 100% !important;
+      height: 394px; }
+  .cuerpo-page .text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-  .text p {
-    text-align: center; }
-  main .caja_1 img {
-    width: 100%;
-    height: 394px; } }
+  .cuerpo-page .text p {
+    text-align: center; } }
 
 @media screen and (max-width: 730px) {
   .foot-page {
@@ -755,12 +749,12 @@ footer {
   main .club h3 {
     font-size: 22px; } }
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 551px) {
   .foot-page {
     width: 400px !important;
     height: 50% !important; }
-  main .club {
-    display: grid;
+  .cuerpo-page .club {
+    display: grid !important;
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
     grid-template-columns: 1fr;
@@ -773,16 +767,16 @@ footer {
     align-items: stretch;
     width: 100%;
     height: 100%; }
-  .cami-1 {
+  .cuerpo-page .cami-1 {
     grid-area: cami-1; }
-  .cami-2 {
+  .cuerpo-page .cami-2 {
     grid-area: cami-2; }
-  .cami-3 {
+  .cuerpo-page .cami-3 {
     grid-area: cami-3; }
-  .cami-4 {
+  .cuerpo-page .cami-4 {
     grid-area: cami-4; }
-  main .btns {
-    display: grid;
+  .cuerpo-page .btns {
+    display: grid !important;
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
     grid-template-columns: 1fr;
@@ -795,13 +789,13 @@ footer {
     align-items: stretch;
     width: 100%;
     height: 80%; }
-  .botin-1 {
+  .cuerpo-page .botin-1 {
     grid-area: botin-1; }
-  .botin-2 {
+  .cuerpo-page .botin-2 {
     grid-area: botin-2; }
-  .botin-3 {
+  .cuerpo-page .botin-3 {
     grid-area: botin-3; }
-  .botin-4 {
+  .cuerpo-page .botin-4 {
     grid-area: botin-4; } }
 
 @media screen and (max-width: 420px) {
@@ -835,17 +829,75 @@ footer {
     width: 80%; } }
 
 /*! NOSOTROS */
-@media screen and (max-width: 990px) {
-  .carousel-fade {
-    width: 80%; } }
+@media screen and (max-width: 1065px) {
+  .card-nos {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 6px 0px;
+    grid-auto-flow: row;
+    justify-items: center;
+    grid-template-areas: "messi belligham" "dibu tucu"; }
+  .messi {
+    grid-area: messi; }
+  .belligham {
+    grid-area: belligham; }
+  .dibu {
+    grid-area: dibu; }
+  .tucu {
+    grid-area: tucu; }
+  .card-nos2 {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 6px 0px;
+    grid-auto-flow: row;
+    justify-items: center;
+    grid-template-areas: "cr7 arge" "feme joaquin"; }
+  .cr7 {
+    grid-area: cr7; }
+  .arge {
+    grid-area: arge; }
+  .feme {
+    grid-area: feme; }
+  .joaquin {
+    grid-area: joaquin; } }
 
-@media screen and (max-width: 860px) {
-  .carousel-fade {
-    width: 70%; } }
-
-@media screen and (max-width: 400px) {
-  .carousel-fade {
-    width: 80%; } }
+@media screen and (max-width: 583px) {
+  .card-nos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px 0px;
+    grid-auto-flow: row;
+    justify-items: center;
+    grid-template-areas: "messi" "belligham" "dibu" "tucu";
+    width: 100%; }
+  .messi {
+    grid-area: messi; }
+  .belligham {
+    grid-area: belligham; }
+  .dibu {
+    grid-area: dibu; }
+  .tucu {
+    grid-area: tucu; }
+  .card-nos2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px 0px;
+    grid-auto-flow: row;
+    justify-items: center;
+    grid-template-areas: "cr7" "arge" "feme" "joaquin";
+    width: 100%; }
+  .cr7 {
+    grid-area: cr7; }
+  .arge {
+    grid-area: arge; }
+  .feme {
+    grid-area: feme; }
+  .joaquin {
+    grid-area: joaquin; } }
 
 /*! CONTACTOS */
 @media screen and (max-width: 1000px) {
@@ -883,5 +935,121 @@ footer {
 
 /*! PRODUCTOS */
 @media screen and (max-width: 1069px) {
+  .botines-nike-produ img {
+    width: 100% !important; }
+  .pelota-nike-produ img {
+    width: 450px !important; } }
+
+@media screen and (max-width: 1047px) {
+  .card {
+    height: 90% !important; }
+    .card p {
+      font-size: 21px !important; }
+    .card h3 {
+      font-size: 24px !important; } }
+
+@media screen and (max-width: 948px) {
+  .card p {
+    font-size: 20px !important; } }
+
+@media screen and (max-width: 920px) {
+  .card-shirts {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    justify-items: center;
+    grid-template-areas: "belgrano arquero" "nike puma"; }
+  .belgrano {
+    grid-area: belgrano; }
+  .arquero {
+    grid-area: arquero; }
+  .nike {
+    grid-area: nike; }
+  .puma {
+    grid-area: puma; }
+  .card {
+    height: 100% !important; }
+  .productos-img {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "botines-produ" "pelota-produ";
+    justify-items: center !important; }
+    .productos-img .botines-nike-produ img {
+      width: 450px;
+      text-align: center; }
+  .botines-produ {
+    grid-area: botines-produ; }
+  .pelota-produ {
+    grid-area: pelota-produ; }
+  .productos-fondos2 img {
+    width: 620px !important; } }
+
+@media screen and (max-width: 860px) {
+  .img-productos-container {
+    height: 80% !important; } }
+
+@media screen and (max-width: 640px) {
+  .productos-fondos2 img {
+    width: 540px !important; } }
+
+@media screen and (max-width: 560px) {
+  .productos-fondos2 img {
+    height: 320px !important;
+    width: 470px !important; } }
+
+@media screen and (max-width: 490px) {
+  .productos-fondos2 img {
+    width: 410px !important; } }
+
+@media screen and (max-width: 467px) {
   .productos-img img {
-    width: 100%; } }
+    width: 400px !important;
+    height: 400px !important; }
+  .card-shirts {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 5px 0px;
+    grid-auto-flow: row;
+    justify-items: center;
+    grid-template-areas: "belgrano" "arquero" "nike" "puma"; }
+  .belgrano {
+    grid-area: belgrano; }
+  .arquero {
+    grid-area: arquero; }
+  .nike {
+    grid-area: nike; }
+  .puma {
+    grid-area: puma; } }
+
+@media screen and (max-width: 462px) {
+  .productos-img {
+    margin: 0px !important; }
+    .productos-img img {
+      width: 350px !important;
+      height: 350px !important; }
+  .img-productos-container {
+    padding-left: 60px !important;
+    padding-right: 60px !important; } }
+
+@media screen and (max-width: 429px) {
+  .productos-img img {
+    width: 300px !important;
+    height: 300px !important; }
+  .productos-fondos2 img {
+    width: 370px !important;
+    height: 280px !important; } }
+
+@media screen and (max-width: 406px) {
+  .img-productos-container {
+    padding-left: 20px !important;
+    padding-right: 20px !important; } }
+
+@media screen and (max-width: 389px) {
+  .productos-fondos2 img {
+    width: 320px !important;
+    height: 250px !important; } }

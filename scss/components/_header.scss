@@ -1,7 +1,7 @@
 header {
     .navbar-container {
         .navbar {
-            background-color: #002038;
+            background-color: $header;
 
             .container-fluid {
                 h1 {
@@ -12,7 +12,7 @@ header {
                 }
 
                 .offcanvas{
-                    background-color: #002038 !important;
+                    background-color: $header !important;
                 }
                 .text-bg-dark{
                     background-color: white;
